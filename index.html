@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aishwarya Shanmugam | QA & Test Automation Engineer</title>
+  <meta name="description" content="Portfolio of Aishwarya Arunachalam Shanmugam - QA Engineer & Test Automation Specialist with 4+ years of experience in Python, Playwright, Selenium, API & CI/CD.">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-nav {
+      background: rgba(10, 15, 30, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-[#090D16] text-slate-200 font-sans selection:bg-indigo-500 selection:text-white antialiased min-h-screen">
+
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-nav">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#hero" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+        <span class="w-9 h-9 rounded-lg bg-indigo-600/30 border border-indigo-500/40 flex items-center justify-center text-indigo-400 font-mono font-semibold text-base">AS</span>
+        <span>Aishwarya<span class="text-indigo-400">.qa</span></span>
+      </a>
+      
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a>
+        <a href="#experience" class="hover:text-indigo-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/aishwaryyaa12" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition" title="GitHub Profile">
+          <i data-lucide="github" class="w-4 h-4"></i>
+        </a>
+        <a href="https://linkedin.com/in/aishwaryaas" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 hover:text-blue-300 border border-blue-500/30 transition" title="LinkedIn Profile">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+        </a>
+        <a href="mailto:aishwarya.a.shanmugam@gmail.com" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium transition shadow-lg shadow-indigo-500/20">
+          <span>Get in Touch</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="hero" class="pt-36 pb-20 relative overflow-hidden">
+    <!-- Ambient Glow Backgrounds -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-indigo-600/15 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+    <div class="absolute top-1/3 right-10 w-[300px] h-[250px] bg-purple-600/15 blur-[100px] rounded-full pointer-events-none -z-10"></div>
+
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs font-medium text-emerald-400 mb-8">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Open to Opportunities in Germany (Steinenbronn/Stuttgart & Nationwide / Remote)</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-4xl">
+        Building high-confidence, <span class="gradient-text">automated test suites</span> that scale release quality.
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mb-10 leading-relaxed font-normal">
+        Hi, I'm <strong class="text-slate-100 font-semibold">Aishwarya Arunachalam Shanmugam</strong>. A Quality Assurance & Test Automation Engineer with <strong class="text-indigo-400">4+ years of experience</strong> in manual & automated testing. Expert in Python, Playwright, Selenium, REST APIs, and cutting-edge AI-assisted QA with Model Context Protocol (MCP).
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center gap-4 mb-16">
+        <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-xl shadow-indigo-600/25">
+          <i data-lucide="folder-code" class="w-4 h-4"></i>
+          <span>View Automated Projects</span>
+        </a>
+        <a href="https://linkedin.com/in/aishwaryaas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-medium text-sm border border-slate-700 transition">
+          <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i>
+          <span>Connect on LinkedIn</span>
+        </a>
+        <a href="mailto:aishwarya.a.shanmugam@gmail.com" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 hover:text-white font-medium text-sm border border-slate-700 transition">
+          <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
+          <span>Email Me</span>
+        </a>
+      </div>
+
+      <!-- HIGHLIGHT METRICS -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="glass-card rounded-2xl p-5 border border-slate-800/80">
+          <div class="text-3xl font-extrabold text-white mb-1">4+</div>
+          <div class="text-xs font-medium text-slate-400 uppercase tracking-wider">Years QA Experience</div>
+        </div>
+        <div class="glass-card rounded-2xl p-5 border border-slate-800/80">
+          <div class="text-3xl font-extrabold text-indigo-400 mb-1">0% → 25%</div>
+          <div class="text-xs font-medium text-slate-400 uppercase tracking-wider">Test Automation Coverage</div>
+        </div>
+        <div class="glass-card rounded-2xl p-5 border border-slate-800/80">
+          <div class="text-3xl font-extrabold text-emerald-400 mb-1">-15%</div>
+          <div class="text-xs font-medium text-slate-400 uppercase tracking-wider">Regression Cycle Time</div>
+        </div>
+        <div class="glass-card rounded-2xl p-5 border border-slate-800/80">
+          <div class="text-3xl font-extrabold text-purple-400 mb-1">7 Devs</div>
+          <div class="text-xs font-medium text-slate-400 uppercase tracking-wider">Web & Mobile Releases Led</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 border-t border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-8 h-[2px] bg-indigo-500"></div>
+        <span class="text-xs font-bold tracking-widest text-indigo-400 uppercase">Background & Focus</span>
+      </div>
+      <h2 class="text-3xl font-bold text-white mb-8">Engineering Quality into Every Sprint</h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-5 text-slate-300 leading-relaxed text-base">
+          <p>
+            I am a QA professional based in <strong class="text-white">Steinenbronn (Stuttgart Region), Germany</strong> with a passion for building reliable test infrastructure, preventing regressions, and streamlining continuous integration workflows.
+          </p>
+          <p>
+            During my recent role as QA Analyst at <strong class="text-indigo-400">Bettermile GmbH in Germany</strong>, I was responsible for end-to-end testing across web and mobile products. I established Selenium and Python regression suites in CI/CD from scratch, raising automated coverage from 0% to 25%, and reducing release testing overhead by 15% for a cross-functional 7-engineer development team.
+          </p>
+          <p>
+            I believe modern QA goes far beyond finding bugs—it's about observability, API contract reliability, database integrity, and leveraging emerging AI paradigms like <strong class="text-purple-400">Model Context Protocol (MCP)</strong> to accelerate defect triage and test design.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-4 text-sm">
+            <span class="inline-flex items-center gap-2 text-slate-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span>English (C1 Fluent)</span>
+            </span>
+            <span class="inline-flex items-center gap-2 text-slate-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span>German (B1 Conversational)</span>
+            </span>
+            <span class="inline-flex items-center gap-2 text-slate-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+              <span>100% Relocation Ready in Germany</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Quick Facts Card -->
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <i data-lucide="graduation-cap" class="w-5 h-5 text-indigo-400"></i>
+              <span>Education</span>
+            </h3>
+            <div class="space-y-4 text-sm">
+              <div class="border-l-2 border-indigo-500/50 pl-3">
+                <div class="font-semibold text-slate-200">M.Sc. Computer Science</div>
+                <div class="text-slate-400 text-xs">IU International University of Applied Sciences, Berlin</div>
+                <div class="text-indigo-400 text-xs mt-0.5">2023 – 2026</div>
+              </div>
+              <div class="border-l-2 border-slate-700 pl-3">
+                <div class="font-semibold text-slate-200">B.Tech. Computer Science</div>
+                <div class="text-slate-400 text-xs">Presidency University, Bangalore</div>
+                <div class="text-slate-500 text-xs mt-0.5">2017 – 2021</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 space-y-1.5">
+            <div>📍 <strong>Location:</strong> Steinenbronn (Stuttgart Area)</div>
+            <div>💼 <strong>Work Authorization:</strong> Eligible to work in Germany</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-20 border-t border-slate-800/80 bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-8 h-[2px] bg-indigo-500"></div>
+        <span class="text-xs font-bold tracking-widest text-indigo-400 uppercase">Core Competencies</span>
+      </div>
+      <h2 class="text-3xl font-bold text-white mb-12">Technical Toolkit & Disciplines</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Automation -->
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-indigo-500/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-indigo-600/20 text-indigo-400 flex items-center justify-center mb-4">
+            <i data-lucide="cpu" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Test Automation</h3>
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">Robust UI and end-to-end framework architecture designed for scale.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">Playwright</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">Selenium</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">Python</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">Pytest</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">POM</span>
+          </div>
+        </div>
+
+        <!-- API & DB -->
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-emerald-500/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center mb-4">
+            <i data-lucide="database" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">API & Data QA</h3>
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">Backend contracts, microservices verification, and database consistency.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">Postman</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">Newman CLI</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">REST APIs</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">PostgreSQL</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">SQL Tuning</span>
+          </div>
+        </div>
+
+        <!-- CI/CD & Cloud -->
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-blue-500/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center mb-4">
+            <i data-lucide="git-branch" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">CI/CD & Cloud</h3>
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">Integrated build pipelines, device clouds, and security scanning.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">GitHub Actions</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">AWS Device Farm</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">AWS CDK</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">Wiz Security</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">Docker</span>
+          </div>
+        </div>
+
+        <!-- AI & Innovation -->
+        <div class="glass-card rounded-2xl p-6 border border-slate-800 hover:border-purple-500/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center mb-4">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">AI-Assisted QA</h3>
+          <p class="text-xs text-slate-400 mb-4 leading-relaxed">Next-generation automated testing workflows powered by AI protocols.</p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">Model Context Protocol</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">MCP Servers</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">FastMCP</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs text-slate-300 font-mono">AI Test Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section id="projects" class="py-20 border-t border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-8 h-[2px] bg-indigo-500"></div>
+        <span class="text-xs font-bold tracking-widest text-indigo-400 uppercase">Code & Architectures</span>
+      </div>
+      <h2 class="text-3xl font-bold text-white mb-12">Featured GitHub Repositories</h2>
+
+      <div class="space-y-8">
+        <!-- Project 1: Playwright -->
+        <div class="glass-card rounded-3xl p-8 border border-slate-800 hover:border-slate-700 transition relative overflow-hidden group">
+          <div class="flex flex-col lg:flex-row justify-between gap-6">
+            <div class="space-y-4 max-w-3xl">
+              <div class="flex items-center gap-3">
+                <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-medium">Core Test Automation</span>
+                <span class="text-slate-500 text-xs">•</span>
+                <span class="text-slate-400 text-xs">Python 3.11</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">
+                <a href="https://github.com/aishwaryyaa12/playwright-python-pytest-framework" target="_blank" rel="noopener noreferrer">
+                  playwright-python-pytest-framework
+                </a>
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Enterprise-grade Web & API End-to-End test automation framework implementing the Page Object Model (POM), Pytest fixtures, multi-browser execution (Chromium, Firefox, WebKit), and parallel test execution integrated with GitHub Actions CI/CD pipelines.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                <li>Strict Page Object Model separation for high maintainability</li>
+                <li>Comprehensive test coverage across UI authentication, inventory validation, and REST API contracts</li>
+                <li>Automated headless cross-browser regression triggers on every pull request</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Playwright</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Python</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Pytest</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Page Object Model</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">GitHub Actions</span>
+              </div>
+            </div>
+
+            <div class="flex lg:flex-col justify-end items-end gap-3 min-w-[180px]">
+              <a href="https://github.com/aishwaryyaa12/playwright-python-pytest-framework" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition">
+                <i data-lucide="github" class="w-4 h-4"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: API & SQL -->
+        <div class="glass-card rounded-3xl p-8 border border-slate-800 hover:border-slate-700 transition relative overflow-hidden group">
+          <div class="flex flex-col lg:flex-row justify-between gap-6">
+            <div class="space-y-4 max-w-3xl">
+              <div class="flex items-center gap-3">
+                <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono font-medium">Backend & Data QA</span>
+                <span class="text-slate-500 text-xs">•</span>
+                <span class="text-slate-400 text-xs">Postman & SQL</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">
+                <a href="https://github.com/aishwaryyaa12/api-testing-postman-python-sql" target="_blank" rel="noopener noreferrer">
+                  api-testing-postman-python-sql
+                </a>
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Automated REST API and database validation suite demonstrating contract testing, response schema assertion, Newman CLI integration, and Python SQL verification against PostgreSQL databases.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                <li>Pre-request token rotation, dynamic variable injection, and status assertion scripts</li>
+                <li>Headless Newman execution integrated in CI/CD pipeline runs</li>
+                <li>Python database integrity scripts reconciling API responses with database records</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Postman</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Newman CLI</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Python</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">PostgreSQL</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Docker</span>
+              </div>
+            </div>
+
+            <div class="flex lg:flex-col justify-end items-end gap-3 min-w-[180px]">
+              <a href="https://github.com/aishwaryyaa12/api-testing-postman-python-sql" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold border border-slate-700 transition">
+                <i data-lucide="github" class="w-4 h-4"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: AI MCP -->
+        <div class="glass-card rounded-3xl p-8 border border-slate-800 hover:border-slate-700 transition relative overflow-hidden group">
+          <div class="flex flex-col lg:flex-row justify-between gap-6">
+            <div class="space-y-4 max-w-3xl">
+              <div class="flex items-center gap-3">
+                <span class="px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-mono font-medium">Innovation & AI Testing</span>
+                <span class="text-slate-500 text-xs">•</span>
+                <span class="text-slate-400 text-xs">Model Context Protocol</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-indigo-300 transition-colors">
+                <a href="https://github.com/aishwaryyaa12/ai-mcp-test-assistant" target="_blank" rel="noopener noreferrer">
+                  ai-mcp-test-assistant
+                </a>
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Custom Model Context Protocol (MCP) server enabling Large Language Models (LLMs) to query live API endpoints, auto-generate structured Pytest scenarios, and conduct automated defect triage directly from runtime stack traces.
+              </p>
+              <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                <li>MCP tools exposing schema validation, automated test case generation, and defect classification</li>
+                <li>Connects directly to AI IDEs (Antigravity, Cursor, Claude Desktop) for assisted test authoring</li>
+                <li>Demonstrates forward-thinking adoption of AI protocols in software quality assurance</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Model Context Protocol</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">FastMCP</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">Python</span>
+                <span class="px-2.5 py-1 rounded bg-slate-800/80 text-xs font-mono text-slate-300">AI Test Strategy</span>
+              </div>
+            </div>
+
+            <div class="flex lg:flex-col justify-end items-end gap-3 min-w-[180px]">
+              <a href="https://github.com/aishwaryyaa12/ai-mcp-test-assistant" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold border border-slate-700 transition">
+                <i data-lucide="github" class="w-4 h-4"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section id="experience" class="py-20 border-t border-slate-800/80 bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-8 h-[2px] bg-indigo-500"></div>
+        <span class="text-xs font-bold tracking-widest text-indigo-400 uppercase">Career History</span>
+      </div>
+      <h2 class="text-3xl font-bold text-white mb-12">Professional Experience</h2>
+
+      <div class="relative border-l border-slate-800 ml-4 md:ml-8 pl-6 md:pl-10 space-y-12">
+        <!-- Role 1 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-[#090D16]"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-xl font-bold text-white">QA Analyst (Working Student, 20h/wk)</h3>
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-800 text-indigo-400 border border-slate-700 w-fit">05/2024 – 04/2026</span>
+          </div>
+          <div class="text-sm font-semibold text-indigo-400 mb-3">Bettermile GmbH • Berlin / Germany</div>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+            <li>Built and maintained automated Selenium & Python regression test scripts in CI/CD, increasing automated test coverage from <strong>0% to 25%</strong>.</li>
+            <li>Automated manual regression workflows, reducing sprint release overhead by <strong>~15%</strong> for a 7-engineer development team across web and mobile platforms.</li>
+            <li>Owned release readiness and executed functional, integration, regression, and E2E testing to prevent defects from reaching production.</li>
+            <li>Supported security scanning with Wiz, AWS CDK & VPC-Logging configuration, and optimized PostgreSQL queries for backend services.</li>
+          </ul>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#090D16]"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-xl font-bold text-white">Senior Analyst & Test Engineer</h3>
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-800 text-slate-400 border border-slate-700 w-fit">01/2023 – 09/2023</span>
+          </div>
+          <div class="text-sm font-semibold text-slate-400 mb-3">Capgemini • Bangalore, India</div>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+            <li>Engineered automated UI test suites with Selenium and Python; executed Postman and SQL verification for enterprise client APIs.</li>
+            <li>Managed defect triage and sprint testing workflows in Jira across fast-paced Agile release cycles.</li>
+          </ul>
+        </div>
+
+        <!-- Role 3 -->
+        <div class="relative">
+          <div class="absolute -left-[31px] md:-left-[47px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-[#090D16]"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-xl font-bold text-white">Analyst & Application Developer Intern</h3>
+            <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-800 text-slate-400 border border-slate-700 w-fit">01/2021 – 01/2023</span>
+          </div>
+          <div class="text-sm font-semibold text-slate-400 mb-3">Capgemini • Bangalore, India</div>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+            <li>Designed and executed manual functional tests; developed and tested RESTful APIs for the ShopAura e-commerce platform.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <section id="contact" class="py-24 border-t border-slate-800/80 relative">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-xs font-medium text-indigo-400 mb-6">
+        <span>Let's Connect</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Ready to elevate your engineering quality?</h2>
+      <p class="text-slate-400 max-w-xl mx-auto mb-10 text-base leading-relaxed">
+        I am actively interviewing for QA Engineer, Test Automation, and SDET roles across Germany (Steinenbronn/Stuttgart, Berlin, Munich, Hamburg, Frankfurt, Remote).
+      </p>
+
+      <div class="flex flex-wrap justify-center items-center gap-4 mb-16">
+        <a href="mailto:aishwarya.a.shanmugam@gmail.com" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-600/25">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>aishwarya.a.shanmugam@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/aishwaryaas" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm border border-slate-700 transition">
+          <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i>
+          <span>LinkedIn Profile</span>
+        </a>
+        <a href="https://github.com/aishwaryyaa12" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm border border-slate-700 transition">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <div class="text-xs text-slate-500 border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>© 2026 Aishwarya Arunachalam Shanmugam. All rights reserved.</div>
+        <div class="flex items-center gap-2 text-slate-400">
+          <span>Hosted for free on</span>
+          <span class="text-indigo-400 font-mono">GitHub Pages</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lucide Script init -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
